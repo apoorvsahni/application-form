@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://p.kindpng.com/picc/s/11-117151_request-form-icon-png-download-application-form-icon.png ">
+    <title>Document Form</title>
+</head>
+<body>
+    <form action ="/action_page.php" target="_blank" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name"><b>Application form</b><br>
+             Full Name: <input type="text" name="fname" required placeholder="Enter your name">           <!-- Application head-->
+             <div class="formerror">                                                                
+             <b><small > </small></b>
+            </div>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email ID : <input type="email" name="femail" required placeholder="Enter your email">
+            <div class="formerror">
+                 <b><small> </small></b>
+            </div>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone No.: <input type="phone" name="fphone" required placeholder="Enter number">
+            <div class="formerror">
+            <b><small ></small></b>
+            </div>
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" required placeholder="Enter your password">
+            <div   class="formerror">
+            <b><small></small></b>
+            </div>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" required  placeholder="Confirm password">
+            <div  class="formerror">
+                <b><small></small></b>
+            </div>
+            
+        </div>
+
+        <input class="but" type="submit" value="Submit">
+
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
